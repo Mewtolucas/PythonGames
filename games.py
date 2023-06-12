@@ -90,10 +90,7 @@ def connect_four():
     c = 7
     r = 6
     board = [[9] * c for i in range(r)]
-
     
-    print(board)
-
     player = 1
     col = 0
     game_on = True
