@@ -8,8 +8,6 @@ def square(side):
         t.forward(side)
         t.left(90)
 
-
-
 def row(w, side):
     for i in range(w):
         square(side)
