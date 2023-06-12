@@ -330,56 +330,11 @@ def snakes_and_ladders():
             print("Player 2 wins!")
             game_on = False
             break
-        
-ex = 0
-wy = 0
-
-def get_coor(x, y):
-    ex = x
-    wy = y
-    if player == True:
-            t.penup()
-            t.goto(ex//100*100+50, wy//100*100+15)
-            t.pendown()
-            t.circle(35)
-            
-    else:
-        t.penup
-        t.goto(ex//100*100+20, wy//100*100+20)
-        t.pendown()
-        t.goto(ex//100*100+80, wy//100*100+80)
-        t.penup
-        t.goto(ex//100*100+20, wy//100*100+80)
-        t.pendown()
-        t.goto(ex//100*100+80, wy//100*100+20)
-    
-def tic_tac_toe():
-    
-    game_on = True
-    c = 3
-    r = 3
-    board = [[9] * c for i in range(r)]
-    move = 9
-    coor = [0,0]
-    player = 1
-    
-    tic = turtle.Screen()
-    grid(3,3,100)
-
-    while game_on == True:
-        turtle.onscreenclick(get_coor)
-        
-        
-
-
-
-            
-
-game = input("Choose what game you want to play, Connect Four, Snakes and Ladders, Tic-tac-toe")
+       
+game = input("Choose what game you want to play, Connect Four, Snakes and Ladders")
 
 if game == ("Connect Four"):
     connect_four()
 if game == ("Snakes and Ladders"):
     snakes_and_ladders()    
-if game == ("Tic-tac-toe"):
-    tic_tac_toe()
+
